@@ -1,0 +1,32 @@
+@import './assets/index.scss';
+@import './layouts/index.scss';
+@import './pages//index.scss';
+
+html, body, address, blockquote, div,
+form, fieldset, caption,
+h1, h2, h3, h4, h5, h6,
+hr, ul, li, ol, ul, dl, dt, dd,
+table, tr, td, th, p, img {
+  margin:0;
+  padding:0;
+}
+
+img, fieldset {
+  border:none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: text;
+}
+
+.cds--btn {
+  position: static;
+}

@@ -1,0 +1,49 @@
+#logs {
+  width: 100%;
+}
+
+#logs h2 {
+  margin-bottom: 2rem;
+}
+
+#logs form {
+  align-items: flex-end;
+  display: flex;
+  gap: 0.75rem;
+}
+
+#logs .logs-table-header {
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+#logs .logs-table .logs-cell {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+#logs .logs-table .logs-cell p {
+  font-size: 1rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#logs .logs-table__service {
+  white-space: nowrap;
+}
+
+#logs .logs-table__log {
+  @media (max-width: 55rem) {
+    display: none;
+  }
+}
+
+#logs .logs-cell__log {
+  @media (max-width: 55rem) {
+    display: none;
+  }
+}

@@ -1,0 +1,87 @@
+#root-layout {
+  display: flex;
+  margin: 0 auto;
+  max-width: 92rem;
+  min-height: 100lvh;
+  padding: 1rem;
+}
+
+#root-layout .root-nav {
+  min-width: 10rem;
+
+  @media (max-width: 48rem) {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0.5rem;
+    left: 0;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+}
+
+#root-layout .root-nav h1 {
+  aspect-ratio: 1;
+  background-color: #781058;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: 'Roboto Mono';
+  font-size: 0.75rem;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
+  max-width: 4rem;
+  text-align: center;
+
+  @media (max-width: 48rem) {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+#root-layout .root-nav nav {
+  @media (max-width: 48rem) {
+    display: none;
+  }
+}
+
+#root-layout nav.root-nav__menu--opened {
+  @media (max-width: 48rem) {
+    display: flex;
+    background-color: #ffffff;
+    position: fixed;
+    right: 1rem;
+    top: 4rem;
+    padding: 1rem;
+  }
+}
+
+#root-layout .root-nav li a {
+  color: #000000;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+#root-layout .root-nav li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#root-layout .root-nav .menu {
+  display: none;
+
+  @media (max-width: 48rem) {
+    display: flex;
+  }
+}
+
+#root-layout {
+  @media (max-width: 48rem) {
+    margin-top: 3.5rem;
+  }
+}
